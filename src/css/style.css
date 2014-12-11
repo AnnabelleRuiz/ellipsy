@@ -25,4 +25,8 @@ h1{
 
 .nextContent{
     color: green;
+    position: absolute;
+}
+p{
+    color: white;
 }

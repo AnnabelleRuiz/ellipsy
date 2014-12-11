@@ -1,13 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Metro</title>
-</head>
-<body>
-    
-    <p>Je suis dans le metro</p>
-    
-    <p>Aller à l'école</p>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Metro</title>
+        <link rel="stylesheet" href="../src/css/normalize.css" />
+        <link rel="stylesheet" href="../src/css/style.css" />
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <!-- jquery -->
+        <link href="//vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+        <!-- videojs -->
+    </head>
+
+    <body>
+<div class="content">
+        <div class="actualContent">
+            <p class="bouton">Aller à l'école</p>
+        </div>
+
+</div>    
+    <script>  
+        $(function () {
+            $('.bouton').click(function () {
+                $('.actualContent').remove();
+                $('.content').load('content4.html .actualContent', function () {});
+            });
+        });   
+        
+    </script>
+       
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <!-- jquery -->
+        <script src="//vjs.zencdn.net/4.11/video.js"></script>
+        <!-- videojs -->
+        <script src="../src/js/libs/buzz.min.js"></script>
+        <!-- audio js -->
+
+    </body>
+
+    </html>
