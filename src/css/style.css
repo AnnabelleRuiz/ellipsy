@@ -4,3 +4,25 @@
   box-sizing: border-box;
  }
  
+body{
+    background-color: black;
+    z-index: -1;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+    color: white;
+}
+
+.bouton{
+    color: white;
+    font-size: 20px;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.nextContent{
+    color: green;
+}
