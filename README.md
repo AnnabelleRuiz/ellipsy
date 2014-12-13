@@ -4,12 +4,12 @@ Ellipsy est une production digitale étudiante sur le thème de l'écriture. Ell
 
 Team
 =========
-Meghan Regior : UX/UI DESIGNER
-Annabelle Ruiz : FRONT-END DEVELOPER
-Wassim Foad : FRONT-END DEVELOPER
-Cynthia Barbé : PROJECT MANAGER
-Vincent Goguelin : CONCEPTOR
-Julia Parinello : PRODUCER
+- **Meghan Regior** : UX/UI DESIGNER 
+- **Annabelle Ruiz** : FRONT-END DEVELOPER 
+- **Wassim Foad** : FRONT-END DEVELOPER
+- **Cynthia Barbé** : PROJECT MANAGER
+- **Vincent Goguelin** : CONCEPTOR
+- **Julia Parinello** : PRODUCER
 
 
 URL
