@@ -2,6 +2,219 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
- }
+}
  
- 
+
+  /* ==========================================================================
+                                    FONTS
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Font_logo';
+    src: url('font/font_logo/font_logo-webfont.eot');
+    src: url('font/font_logo/font_logo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/font_logo/font_logo-webfont.woff') format('woff'),
+         url('font/font_logo/font_logo-webfont.ttf') format('truetype'),
+         url('font/font_logo/font_logo-webfont.svg#Font_logo') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.flaticon-more3 {
+  font-size: 40px;
+}
+
+#icon-more {
+  position: absolute;
+  display: block;
+  margin-right: 35px;
+  right: 0;
+  top: 0;
+}
+
+ /* ==========================================================================
+                                    STRUCTURE
+   ========================================================================== */
+body, html {
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #101010;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.actualContent {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  margin: 0;
+  display: block;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "Font_logo";
+}
+
+
+
+/* ==========================================================================
+                                  HOME
+   ========================================================================== */
+/** Home about (pop-up)
+===================================*/
+#about {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  background-color: black;
+}
+
+  #about h2 {
+    color: #121312;
+    font-size: 3em;
+  }
+
+  #about .content-about {
+    color: #8d8b84;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  
+.intro-about {
+  padding: 2em 6em 1.5em;
+}
+
+
+.content-about {
+  padding: 5em 0;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #f6f0db;
+  top: 15%;
+  z-index: 1;
+}
+
+.content-about .profil-about {
+  width: 120px;
+  font-size: .8em;
+  font-weight: normal;
+  display: inline-block;
+  line-height: 20px;
+}
+  .profil-about img {
+    width: 100%;
+  }
+  .content-about .profil-about p {
+    font-weight: 400;
+    color: #121312;
+    line-height: 25px;
+    margin: 0;
+  }
+  .profil-about span {
+    color: #a19e96;
+    text-transform: uppercase; 
+  }
+
+
+
+/** Home start
+===================================*/
+#home {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #232120; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyMzIxMjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMxMDEwMTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-radial-gradient(center, ellipse cover,  #232120 0%, #101010 50%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#232120), color-stop(50%,#101010)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #232120 0%,#101010 50%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #232120 0%,#101010 50%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #232120 0%,#101010 50%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #232120 0%,#101010 50%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232120', endColorstr='#101010',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}
+
+h1 {
+  color: #f7f1dc;
+  font-size: 12em;
+  margin: 18% 0 0;
+}
+
+.content-start {
+  text-align: center;
+  padding-top: 9%;
+}
+
+.content-start li {
+  margin: 10px;
+  display: inline-block;
+}
+
+.content-start li:nth-child(4) {
+  display: block;
+}
+
+.content-start li .btn-start {
+  font-weight: 900;
+  color: transparent;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.9px rgba(255,255,255,0.7);
+  letter-spacing: 6px;
+  transition:all 0.8s ease-in-out;
+  -moz-transition:all 0.8s ease-in-out;
+  -webkit-transition:all 0.8s ease-in-out;
+}
+
+.content-start .btn-start:hover {
+  letter-spacing:12px;
+  opacity: 0.35;
+  color: transparent;
+  text-shadow: 0 0 2px rgba(255,255,255,0.7);
+}
+
+.social {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 35px;
+}
+
+.social li {
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.social li:hover {
+  color: #f6f0db;
+}
