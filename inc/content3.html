@@ -1,41 +1,67 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Metro</title>
-        <link rel="stylesheet" href="../src/css/normalize.css" />
-        <link rel="stylesheet" href="../src/css/style.css" />
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- jquery -->
-        <link href="//vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
-        <!-- videojs -->
-    </head>
-
-    <body>
-<div class="content">
+<head>
+    <meta charset="UTF-8">
+    <title>School1</title>
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/font/flaticon/flaticon.css">
+    
+</head>
+<body>
+   
+    <div class="content">
         <div class="actualContent">
-            <p class="bouton">Aller à l'école</p>
+            <section class="new-interaction">
+                
+                <!-- Button order -->
+                <div id="order" >
+                    <i class="flaticon-voice1"></i>
+                </div>
+
+                <div class="school">
+                    <div class="question">
+                        <div id="answer1"></div>
+                        <img id="goodanswer1" class="question-good" src="./src/img/school1.jpg">
+                        <i class="flaticon-car169"></i>
+                    </div>
+                    <div class="question">
+                        <div id="answer2"></div>
+                        <img id="badanswer1" src="./src/img/school2.jpg">
+                        <i class="flaticon-fingerprint10"></i>
+                    </div>
+                    <div class="question" >
+                        <div id="answer3"></div>
+                        <img id="badanswer2" src="./src/img/school3.jpg">
+                        <i class="flaticon-shopping111"></i>
+                    </div>
+                    <div class="question" >
+                        <div id="answer4"></div>
+                        <img id="goodanswer2" src="./src/img/school4.jpg">
+                        <i class="flaticon-call10"></i>
+                    </div>
+                    <div class="question" >
+                        <div id="answer5"></div>
+                        <img id="goodanswer3" src="./src/img/school5.jpg">
+                        <i class="flaticon-voice1"></i>
+                    </div>
+                    <div class="question" >
+                        <div id="answer6"></div>
+                        <img id="goodanswer4" src="./src/img/school6.jpg">
+                        <i class="flaticon-brain10"></i>
+                    </div>
+           </section>
         </div>
+    </div>
+    
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- jquery -->
+    
+    <script src="./src/js/libs/buzz.min.js"></script>
+    <!-- audio js -->
 
-</div>    
-    <script>  
-        $(function () {
-            $('.bouton').click(function () {
-                $('.actualContent').remove();
-                $('.content').load('content4.html .actualContent', function () {});
-            });
-        });   
-        
-    </script>
-       
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- jquery -->
-        <script src="//vjs.zencdn.net/4.11/video.js"></script>
-        <!-- videojs -->
-        <script src="../src/js/libs/buzz.min.js"></script>
-        <!-- audio js -->
+</body>
 
-    </body>
-
-    </html>
+</html>

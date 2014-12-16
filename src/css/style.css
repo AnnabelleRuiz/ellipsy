@@ -20,8 +20,33 @@
     font-weight: normal;
 }
 
+
+.flaticon-add63, .flaticon-expand, .flaticon-facebook55, .flaticon-social19, .flaticon-headphones36, .flaticon-more3, 
+.flaticon-right246, .flaticon-pause45, .flaticon-speaker94, .flaticon-speaker96 {
+  color: #888787;
+}
+
+.flaticon-facebook55:hover, .flaticon-more3:hover, .flaticon-social19:hover, 
+.flaticon-right246:hover, .flaticon-pause45:hover, .flaticon-speaker94:hover, .flaticon-speaker96,
+.flaticon-car169, .flaticon-fingerprint10, .flaticon-shopping111, .flaticon-call10, .flaticon-voice1, .flaticon-brain10,
+.flaticon-maps1, .flaticon-fingerprint10, .flaticon-user15, .flaticon-medical15, .flaticon-searching40 {
+  color: #f6f0db;
+}
+
+.flaticon-right246, .flaticon-pause45 {
+  font-size: 50px;
+}
 .flaticon-more3 {
   font-size: 40px;
+}
+.flaticon-speaker94 {
+  font-size: 40px;
+}
+.flaticon-speaker96 {
+  font-size: 30px;
+}
+.flaticon-right246, .flaticon-pause45, .flaticon-speaker94, .flaticon-speaker96 {
+  cursor: pointer;
 }
 
 #icon-more {
@@ -40,8 +65,7 @@ body, html {
   height: 100%;
   font-size: 1em;
   z-index: 1;
-  overflow: hidden;
-  background-color: #101010;
+  /*overflow: hidden;*/
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -49,6 +73,7 @@ body, html {
 .content {
   width: 100%;
   height: 100%;
+    
 }
 
 .actualContent {
@@ -69,6 +94,7 @@ p {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3 {
@@ -217,4 +243,379 @@ h1 {
 
 .social li:hover {
   color: #f6f0db;
+}
 
+/* ==========================================================================
+                                     VIDEO
+   ========================================================================== */
+
+
+video {
+  width: 100%;
+  height: auto;
+}
+.videoEllipsy{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}  
+
+/** Button consign
+=================================== */
+.flaticon-voice1 {
+	font-size: 40px;
+  margin-right: 2px;
+}
+
+	#order{
+		margin-left:50%;
+		margin-top:30px;
+		cursor: pointer;
+		text-align: center;
+		line-height: 47px;
+		width: 50px;
+		height: 50px;
+		border: 2px solid #f6f0db;
+		border-radius:50px;
+
+		-webkit-transition:all 0.4s ease;
+		-moz-transition:all 0.4s ease;
+		-o-transition:all 0.4s ease;
+		-ms-transition:all 0.4s ease;
+	}
+
+
+	#order:hover{
+		border: 2px solid #51f09f;
+		transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+	}
+
+	#order.animate{
+	border: 2px solid #51f09f;
+    -webkit-animation: myfirst 1.7s infinite ease; /* Chrome, Safari, Opera */
+    -moz-animation: myfirst 1.7s infinite ease; /* Chrome, Safari, Opera */
+    animation: myfirst 1.7s infinite ease;
+	}
+
+	@keyframes myfirst {
+   		0%   {-webkit-transform: scale(1);}
+    	50%  {-webkit-transform: scale(1.4); }
+    	100% {-webkit-transform: scale(1);}
+	}
+
+	@-webkit-keyframes myfirst {
+   		0%   {-webkit-transform: scale(1);}
+    	50%  {-webkit-transform: scale(1.4); }
+    	100% {-webkit-transform: scale(1);}
+	}
+
+	@-moz-transition-keyframes myfirst {
+   		0%   {-moz-transform: scale(1);}
+    	50%  {-moz-transform: scale(1.4);}
+    	100% {-moz-transform: scale(1);}
+	}
+
+	#order.disanimate{
+    	-webkit-animation: disanimate 1.7s; /* Chrome, Safari, Opera */
+    	-moz-animation: disanimate 1.7s; /* Chrome, Safari, Opera */
+    	animation: disanimate 1.7s;
+	}
+
+	@-webkit-keyframes disanimate {
+    	0%   {-webkit-transform: scale(1.4);  opacity: 1;}
+    	100% {-webkit-transform: scale(1); border: 2px solid white;}
+	}
+
+	@-moz-keyframes disanimate {
+    	0%   {-moz-transform: scale(1.4); opacity: 1;}
+    	100% {-moz-transform: scale(1); border: 2px solid white;}
+	}
+
+	.flaticon-microphone83{
+		position: relative;
+		color: white;
+		font-size: 25px;
+	}
+
+
+/* ==========================================================================
+                                    METRO
+   ========================================================================== */
+.new-interaction {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(25, 25, 25, .9);
+}
+
+.metro-lines {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 7%;
+}
+
+.metro-lines span {
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.little-station {
+	width: 12px;
+	height: 12px;
+}
+/* Little station yellow */
+.station-yellow {
+	background-color: #f7e395;
+}
+.station-yellow1 {
+	margin-top: 160px;
+	margin-left: 10px;
+}
+.station-yellow2 {
+	margin-top: 41px;
+	margin-left: 75px;
+}
+.station-yellow3 {
+	margin-top: 380px;
+	margin-left: 349px;
+}
+
+/* Little station red */
+.station-red {
+	background-color: #e87a74;
+}
+.station-red1 {
+	margin-top: 340px;
+	margin-left: 64px;
+}
+.station-red2 {
+	margin-top: 220px;
+	margin-left: 64px;
+}
+.station-red3 {
+	margin-top: -3px;
+	margin-left: 390px;
+}
+
+/* Little stations blue */
+.station-blue {
+	background-color: #94f0ff;
+}
+.station-blue1 {
+	margin-top: 296px;
+	margin-left: -1px;
+}
+.station-blue2 {
+	margin-top: 296px;
+	margin-left: 150px;
+}
+.station-blue3 {
+	margin-top: 191px;
+	margin-left: 490px;
+}
+
+/* Little stations white */
+.station-white {
+	background-color: #f1f1f1;
+}
+.station-white1 {
+	margin-top: 400px;
+	margin-left: 305px;
+}
+.station-white2 {
+	margin-top: 160px;
+	margin-left: 370px;
+}
+.station-white3 {
+	margin-left: 236px;
+}
+
+/* Big stations */
+.big-station {
+	width: 20px;
+	height: 20px;
+	background-color: #f1f1f1;
+	border: 4px solid #cbcbcb;
+}
+
+.big-station1 {
+	margin-top: 290px;
+	margin-left: 60px;
+}
+.big-station2 {
+	margin-top: 110px;
+	margin-left: 140px;
+}
+.big-station3 {
+	margin-top: 110px;
+	margin-left: 232px;
+}
+.big-station4 {
+	margin-top: 223px;
+	margin-left: 253px;
+}
+.big-station5 {
+	margin-top: 316px;
+	margin-left: 345px;
+}
+.big-station6 {
+	margin-top: 187px;
+	margin-left: 453px;
+}
+ 
+ 
+/* ==========================================================================
+                                    SCHOOL
+   ========================================================================== */
+.school {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 2em 3em;
+  margin-left: 4.6%;
+}
+
+.question {
+  float: left;
+  display: block;
+  width: 28%;
+  line-height: 0;
+  position: relative;
+  height: auto;
+  margin: 1%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.question img {
+  width: 100%;
+  max-width: 520px;
+  max-height: 345px;
+  z-index: 8;
+}
+
+.question i {
+  position: absolute;
+  font-size: 3em;
+  line-height: 1em;
+  top: 42px;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  z-index: 10;
+}
+
+.question:hover i {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.color-good {
+  position: absolute;
+  background-color: rgba(0, 193, 147, .6);
+  border: 5px solid #f6f0db;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.color-wrong {
+  position: absolute;
+  background-color: rgba(188, 96, 96, .6);
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+/* ==========================================================================
+                                    SUPERMARKET
+   ========================================================================== */
+.supermarket {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.ingredient {
+  width: 100%;
+  max-width: 250px;
+  cursor: pointer;
+  float: left;
+  /*max-height: 300px;*/
+}
+    .ingredient i {
+      font-size: 5em;
+    }
+
+#ingredient1 {
+  background-color: #5ed9d8;
+}
+    #ingredient1 i {
+      color: #3b8786;
+    }
+#ingredient2 {
+  background-color: #5ed9a1;
+}
+    #ingredient2 i {
+      color: #3b8764;
+    }
+#ingredient3 {
+  background-color: #927f6f;
+}
+    #ingredient3 i {
+      color: #60544a;
+    }
+#ingredient4 {
+  background-color: #d66767;
+}
+    #ingredient4 i {
+      color: #8a4242;
+    }
+#ingredient5 {
+  background-color: #f78b60;
+}
+    #ingredient5 i {
+      color: #975439;
+    }
+#ingredient6 {
+  background-color: #dadada;
+}
+    #ingredient6 i {
+      color: #909090;
+    }
+#ingredient7 {
+  background-color: #f7d560;
+}
+    #ingredient7 i {
+      color: #aa9345;
+    }
+
+
+
+.timeline {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: red;
+  bottom: 0;
+}

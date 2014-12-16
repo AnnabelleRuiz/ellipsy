@@ -1,41 +1,61 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Supermarché</title>
-        <link rel="stylesheet" href="../src/css/normalize.css" />
-        <link rel="stylesheet" href="../src/css/style.css" />
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- jquery -->
-        <link href="//vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
-        <!-- videojs -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Supermarket</title>
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/font/flaticon/flaticon.css">
+    
+</head>
 
-    <body>
-<div class="content">
+<body>
+   
+    <div class="content">
         <div class="actualContent">
-            <p class="bouton">Aller au parc</p>
+            <section class="new-interaction">
+                
+                <!-- Button order -->
+                <div id="order" >
+                    <i class="flaticon-voice1"></i>
+                </div>
+
+                <div class="supermarket">
+                    <div id="ingredient1" class="ingredient">
+                        <i class="flaticon-milk6"></i>
+                    </div>
+                    <div id="ingredient2" class="ingredient">
+                        <i class="flaticon-carrot5"></i>
+                    </div>
+                    <div id="ingredient3" class="ingredient">
+                        <i class="flaticon-hazelnut1"></i>
+                    </div>
+                    <div id="ingredient4" class="ingredient">
+                        <i class="flaticon-cow11"></i>
+                    </div>
+                    <div id="ingredient5" class="ingredient">
+                        <i class="flaticon-liquid6"></i>
+                    </div>
+                    <div id="ingredient6" class="ingredient">
+                        <i class="flaticon-fish54"></i>
+                    </div>
+                    <div id="ingredient7" class="ingredient">
+                        <i class="flaticon-bananas1"></i>
+                    </div>
+                </div>
+           </section>
         </div>
+    </div>
+    <div class="timeline"></div>
 
-</div>    
-    <script>  
-        $(function () {
-            $('.bouton').click(function () {
-                $('.actualContent').remove();
-                $('.content').load('content6.html .actualContent', function () {});
-            });
-        });   
-        
-    </script>
-       
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- jquery -->
-        <script src="//vjs.zencdn.net/4.11/video.js"></script>
-        <!-- videojs -->
-        <script src="../src/js/libs/buzz.min.js"></script>
-        <!-- audio js -->
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- jquery -->
+    
+    <script src="../src/js/libs/buzz.min.js"></script>
+    <!-- audio js -->
 
-    </body>
+</body>
 
-    </html>
+</html>

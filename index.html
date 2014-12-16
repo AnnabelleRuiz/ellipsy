@@ -7,10 +7,9 @@
 		<link rel="stylesheet" href="src/css/normalize.css"/>
 		<link rel="stylesheet" href="src/css/style.css"/>
 		<link rel="stylesheet" href="src/css/font/flaticon/flaticon.css"/>
-		<!--<link href="//vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">  videojs -->
+		<script src="src/js/libs/buzz.min.js"></script>
 	</head>
 	<body>
-
 		<div class="content">
 			<div class="actualContent">
 
@@ -21,32 +20,38 @@
 					    <p class="intro-about">Ellipsy est une production digitale étudiante. Elle a été réalisée à HETIC, une école spécialisée dans le web et la communication digitale. Pour plus de mystère, nous vous laissons vivre cette expérience.</p>
 					    
 					    <div class="profil-about">
-					    	<a href="https://www.behance.net/meghanregior" target="_blank"><img src="./src/img/profil1.png" alt=""></a>
+					    	<a href="https://www.behance.net/meghanregior" target="_blank">
+					    		<img src="./src/img/profil1.png" alt="Photo Meghan Regior"></a>
 					    	<a href="https://www.behance.net/meghanregior" target="_blank"><p>Meghan Regior</p></a>
 					    	<span>UI/UX designer</span>
 					    </div>
 					    <div class="profil-about">
-					    	<a href="https://www.linkedin.com/pub/annabelle-ruiz/8b/a/420" target="_blank"><img src="./src/img/profil1.png" alt=""></a>
+					    	<a href="https://www.linkedin.com/pub/annabelle-ruiz/8b/a/420" target="_blank">
+					    		<img src="./src/img/profil2.png" alt="Photo Annabelle Ruiz"></a>
 					    	<a href="https://www.linkedin.com/pub/annabelle-ruiz/8b/a/420" target="_blank"><p>Annabelle Ruiz</p></a>
 					    	<span>Front-end</span>
 					    </div>
 					    <div class="profil-about">
-					    	<a href="#" target="_blank"><img src="./src/img/profil1.png" alt=""></a>
-					    	<a href="#" target="_blank"><p>Wassim Foad</p></a>
+					    	<a href="mailto:foad.wassim@gmail.com">
+					    		<img src="./src/img/profil3.png" alt="Photo Wassim Foad"></a>
+					    	<a href="mailto:foad.wassim@gmail.com"><p>Wassim Foad</p></a>
 					    	<span>Front-end</span>
 					    </div>
 					    <div class="profil-about">
-					    	<a href="https://www.linkedin.com/pub/cynthia-barb%C3%A9/91/b3b/320" target="_blank"><img src="./src/img/profil1.png" alt=""></a>
+					    	<a href="https://www.linkedin.com/pub/cynthia-barb%C3%A9/91/b3b/320" target="_blank">
+					    		<img src="./src/img/profil4.png" alt="Photo Cynthia Barbé"></a>
 					    	<a href="https://www.linkedin.com/pub/cynthia-barb%C3%A9/91/b3b/320" target="_blank"><p>Cynthia Barbé</p></a>
 					    	<span>Chef de projet</span>
 					    </div>
 					    <div class="profil-about">
-					    	<a href="mailto:vincentgoguelin@gmail.com"><img src="./src/img/profil1.png" alt=""></a>
+					    	<a href="mailto:vincentgoguelin@gmail.com">
+					    		<img src="./src/img/profil5.png" alt="Photo Vincent Goguelin"></a>
 					    	<a href="mailto:vincentgoguelin@gmail.com"><p>Vincent Goguelin</p></a>
 					    	<span>Concepteur</span>
 					    </div>
 					    <div class="profil-about">
-					    	<a href="https://www.linkedin.com/in/juliaparrinello" target="_blank"><img src="./src/img/profil1.png" alt=""></a>
+					    	<a href="https://www.linkedin.com/in/juliaparrinello" target="_blank">
+					    		<img src="./src/img/profil6.png" alt="Photo Julia Parinello"></a>
 					    	<a href="https://www.linkedin.com/in/juliaparrinello" target="_blank"><p>Julia Parrinello</p></a>
 					    	<span>Productrice</span>
 					    </div>
@@ -63,7 +68,7 @@
 						<li><i class="flaticon-expand"></i></li>
 						<li><i class="flaticon-add63"></i></li>
 						<li><i class="flaticon-headphones36"></i></li>
-						<li><a class="btn-start" href="#" data-content='0'>Démarrer</a></li>
+						<li><a class="btn-start button" href="#" data-content='0'>Démarrer</a></li>
 					</ul>
 					<ul class="social">
 						<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://ellipsy.fr/" onclick="open('https://www.facebook.com/sharer/sharer.php?u=http://ellipsy.fr/', 'Popup', 'scrollbars=1,resizable=1, height=360,width=570, display=block, margin=0 auto, position=relative');return false;"><i class="flaticon-facebook55"></i></a></li>
@@ -72,11 +77,20 @@
 				</div>
 			</div>  
 		</div>
-
+       
+        <video class="videoEllipsy" id="videoEllipsy">
+                <source src="./src/assets/video/videoEllipsy.webm"type="video/webm" />
+                <source src="./src/assets/video/videoEllipsy.ogg" type="video/ogg" />
+                <source src="./src/assets/video/videoEllipsy.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+        </video>
+        
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script> <!-- jquery -->
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script> <!-- jQuery UI-->
+      <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script> <!-- jQuery UI-->
 		<script type="text/javascript" src="src/js/script.js"></script>
-		<!--<script src="//vjs.zencdn.net/4.11/video.js"></script>  videojs -->
-		<!-- <script src="src/js/libs/buzz.min.js"></script> audio js -->
+		<script src="src/js/libs/buzz.min.js"></script> <!--audio js -->
+
 	</body>
 </html>
 

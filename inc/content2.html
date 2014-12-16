@@ -1,43 +1,54 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<title>Ellipsy Player</title>
+		<link href='../src/css/normalize.css' rel='stylesheet' />
+		<link href='../src/css/style.css' rel='stylesheet' />
+		<link rel="stylesheet" href="../src/css/font/flaticon/flaticon.css">
+	</head>
+<body>
+	<div class="content">
+		<div class="actualContent">
+			<section class="new-interaction">
+				
+				<!-- Button order -->
+				<div id="order" >
+					<i class="flaticon-voice1"></i>
+				</div>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Réveil</title>
-        <link rel="stylesheet" href="../src/css/normalize.css" />
-        <link rel="stylesheet" href="../src/css/style.css" />
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- jquery -->
-        <link href="//vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
-        <!-- videojs -->
-    </head>
+				<div class="metro-lines">
+					<!-- Little Stations yellow -->
+					<span id="metroStation1" class="little-station station-yellow station-yellow1"></span>
+					<span id="metroStation2" class="little-station station-yellow station-yellow2"></span>
+					<span id="metroStation3" class="little-station station-yellow station-yellow3"></span>
+					<!-- Little Stations red -->
+					<span id="metroStation4" class="little-station station-red station-red1"></span>
+					<span id="metroStation5" class="little-station station-red station-red2"></span>
+					<span id="metroStation6" class="little-station station-red station-red3"></span>
+					<!-- Little Stations blue -->
+					<span id="metroStation7" class="little-station station-blue station-blue1"></span>
+					<span id="metroStation8" class="little-station station-blue station-blue2"></span>
+					<span id="metroStation9" class="little-station station-blue station-blue3"></span>
+					<!-- Little Stations white -->
+					<span id="metroStation10" class="little-station station-white station-white1"></span>
+					<span id="metroStation11" class="little-station station-white station-white2"></span>
+					<span id="metroStation12" class="little-station station-white station-white3"></span>
+					<!-- Big stations -->
+					<span id="metroStation13" class="big-station big-station1 button" data-content="2"></span>
+					<span id="metroStation14" class="big-station big-station2"></span>
+					<span id="metroStation15" class="big-station big-station3"></span>
+					<span id="metroStation16" class="big-station big-station4"></span>
+					<span id="metroStation17" class="big-station big-station5"></span>
+					<span id="metroStation18" class="big-station big-station6"></span>
 
-    <body>
-
-    <div class="content">
-        <div class="actualContent">
-            <p class="bouton">Aller au métro</p>
-        </div>
-
-    </div>
-        
-    <script>  
-        $(function () {
-            $('.bouton').click(function () {
-                $('.actualContent').remove();
-                $('.content').load('content3.html .actualContent', function () {});
-            });
-        });   
-        
-    </script>
-
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- jquery -->
-        <script src="//vjs.zencdn.net/4.11/video.js"></script>
-        <!-- videojs -->
-        <script src="src/js/libs/buzz.min.js"></script>
-        <!-- audio js -->
-
-    </body>
-
-    </html>
+					
+					<img src="src/img/metroLines.svg">
+				</div>
+				
+			</section>
+		</div>
+	</div>	
+	<script type="text/javascript" src="../src/js/script.js"></script>
+</body>
+</html>

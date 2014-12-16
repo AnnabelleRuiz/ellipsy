@@ -1,41 +1,39 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Parc</title>
-        <link rel="stylesheet" href="../src/css/normalize.css" />
-        <link rel="stylesheet" href="../src/css/style.css" />
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- jquery -->
-        <link href="//vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
-        <!-- videojs -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>School2</title>
+    <link rel="stylesheet" href="../src/css/normalize.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/font/flaticon/flaticon.css" />
+    
+</head>
 
-    <body>
-<div class="content">
+<body>
+   
+    <div class="content">
         <div class="actualContent">
-            <p class="bouton">Aller au carnet</p>
+            <section class="new-interaction">
+                
+                <!-- Button order -->
+                <div id="order" >
+                    <i class="flaticon-voice1"></i>
+                </div>
+
+                <div class="supermarket">
+                    
+                </div>
+           </section>
         </div>
+    </div>
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- jquery -->
+    
+    <script src="../src/js/libs/buzz.min.js"></script>
+    <!-- audio js -->
 
-</div>    
-    <script>  
-        $(function () {
-            $('.bouton').click(function () {
-                $('.actualContent').remove();
-                $('.content').load('content7.html .actualContent', function () {});
-            });
-        });   
-        
-    </script>
-       
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- jquery -->
-        <script src="//vjs.zencdn.net/4.11/video.js"></script>
-        <!-- videojs -->
-        <script src="../src/js/libs/buzz.min.js"></script>
-        <!-- audio js -->
+</body>
 
-    </body>
-
-    </html>
+</html>
